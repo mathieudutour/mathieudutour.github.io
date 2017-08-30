@@ -1,0 +1,99 @@
+.main section.page1 {
+  background: #121212;
+  padding: 100px;
+  color: white;
+}
+.page1 h1 {
+  text-align: center;
+  width: 12%;
+  font-size:2em;
+}
+.page1 h2 a {
+  color: #4ABEFA;
+}
+
+.page1 a  {
+  color: #999999;
+  text-decoration: none;
+}
+.page1 a:hover {
+  color: #666666;
+}
+.at {
+  color: #666666;
+}
+.page1 ul{
+  margin: 0;
+  padding: 0;
+}
+.page1 li {
+	color: #999999;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+html {
+      height: 100%;
+			background: #121212;
+    }
+    body {
+      padding: 0;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrapper {
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto;
+    	overflow: hidden;
+    }
+
+@media screen and (max-height: 600px) {
+
+	.wrapper {
+		overflow:auto !important;
+	}
+	.main section.page3 {
+		display:none;
+	}
+
+}
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .clear {
+      width: auto;
+    }
+
+
+    .main section .page_container {
+      position: relative;
+      top: 0%;
+      max-width: 950px;
+      z-index: 3;
+    }
+    .main section  {
+      overflow: hidden;
+    }
+
+    .main section > img {
+      position: absolute;
+      max-width: 100%;
+      z-index: 1;
+    }
+    .main section .page_container .btns {
+      clear: both;
+      float: left;
+      text-align: center;
+      width: 435px;
+    }
+    .main section .page_container .btns a{
+      text-align: center;
+    }
