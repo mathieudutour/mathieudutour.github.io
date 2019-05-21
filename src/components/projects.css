@@ -1,0 +1,59 @@
+#projects {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  opacity: 0;
+}
+
+.project {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  color: #f5f5f5;
+  font-family: "Hans Kendrick", sans-serif;
+  transition: color 0.5s ease;
+}
+
+.project:first-child {
+  padding-top: 7rem;
+}
+.project:last-child {
+  padding-bottom: 7rem;
+}
+
+.project-title {
+  color: #f5f5f5;
+  font-size: 40px;
+  border-bottom: 2px solid #f5f5f5;
+  text-decoration: none;
+  transition: color 0.2s ease, border 0.2s ease;
+}
+
+.project p {
+  font-size: 40px;
+  margin: 0;
+}
+
+.projects-container:hover .project {
+  color: #666666;
+}
+
+.projects-container:hover .project:hover {
+  color: #f5f5f5;
+}
+
+.projects-container:hover .project-title {
+  color: #666666;
+  border-bottom: 2px solid #666666;
+}
+
+.projects-container:hover .project:hover .project-title {
+  color: #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.projects-container:hover .project:hover .project-title:hover {
+  color: #38d0c4;
+  border-bottom: 2px solid #38d0c4;
+}

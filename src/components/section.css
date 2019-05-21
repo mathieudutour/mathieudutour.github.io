@@ -1,0 +1,106 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container.small {
+  max-width: 700px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* About */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  opacity: 0;
+}
+
+#about .container:hover p {
+  color: #666666;
+}
+
+#about .container:hover p span.keyword {
+  color: #f5f5f5;
+}
+
+#about .container p {
+  margin-bottom: 45px;
+  color: #f5f5f5;
+  font-family: "Hans Kendrick", sans-serif;
+  font-size: 40px;
+  transition: color 0.5s ease;
+}
+
+.keyword {
+  transition: color 0.5s ease;
+}
+
+.keyword:hover {
+  color: #f5f5f5;
+}
+
+/* Social */
+#social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  opacity: 0;
+}
+
+#social .container.small p {
+  margin-bottom: 4rem;
+  font-size: 45px;
+  font-family: "Hans Kendrick", sans-serif;
+}
+
+#social .container.small a {
+  color: #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
+  text-decoration: none;
+  transition: color 0.2s ease, border 0.2s ease;
+}
+
+#social .container.small a:hover {
+  color: #38d0c4;
+  border-bottom: 2px solid #38d0c4;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+.fadeInSlow {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}

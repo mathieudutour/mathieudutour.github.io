@@ -1,0 +1,28 @@
+.pills {
+  display: flex;
+}
+.pill {
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 2.25rem;
+  margin: 0.2rem;
+  border-radius: 1.2rem;
+}
+.pill:not(:first-child) {
+  margin-left: 0;
+}
+/* carbon design tag colors */
+.pill--sketchplugin {
+  background-color: #ffd4a0;
+  color: #a53725;
+}
+.pill--designversioncontrol {
+  background-color: #fde876;
+  color: #735f00;
+}
+.pill--vision {
+  background-color: #c0e6ff;
+  color: #325c80;
+}
