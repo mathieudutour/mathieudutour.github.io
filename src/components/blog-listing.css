@@ -1,0 +1,16 @@
+.blog-listing {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-decoration: none;
+}
+
+.blog-listing p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.blog-listing h1 {
+  margin-bottom: 1rem;
+}
