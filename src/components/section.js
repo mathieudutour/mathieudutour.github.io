@@ -3,19 +3,25 @@ import PropTypes from "prop-types"
 
 import "./section.css"
 
-const observer = new window.IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const elem = entry.target
-        elem.classList.add("fadeIn")
+const observer =
+  typeof window !== "undefined"
+    ? new window.IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const elem = entry.target
+              elem.classList.add("fadeIn")
+            }
+          })
+        },
+        {
+          threshold: 0.1,
+        }
+      )
+    : {
+        observe() {},
+        unobserve() {},
       }
-    })
-  },
-  {
-    threshold: 0.1,
-  }
-)
 
 const Section = ({ name, centered, children, big }) => {
   const sectionRef = useRef(null)
