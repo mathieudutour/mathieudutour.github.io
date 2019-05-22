@@ -35,7 +35,7 @@ const IndexPage = ({ data: { allMdx } }) => (
       <Projects />
     </Section>
 
-    <Section name="blog-posts">
+    <Section name="blog-posts" noFade>
       <h1 className="head">Writings</h1>
       <BlogListing posts={allMdx.nodes} nested />
     </Section>

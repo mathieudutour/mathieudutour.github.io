@@ -23,14 +23,16 @@ const observer =
         unobserve() {},
       }
 
-const Section = ({ name, centered, children, big }) => {
+const Section = ({ name, centered, children, big, noFade }) => {
   const sectionRef = useRef(null)
-  useEffect(() => {
-    const elem = sectionRef.current
-    observer.observe(elem)
+  if (!noFade) {
+    useEffect(() => {
+      const elem = sectionRef.current
+      observer.observe(elem)
 
-    return () => observer.unobserve(elem)
-  }, [sectionRef])
+      return () => observer.unobserve(elem)
+    }, [sectionRef])
+  }
 
   return (
     <section id={name} className={centered ? "center" : ""} ref={sectionRef}>
@@ -43,6 +45,7 @@ Section.propTypes = {
   name: PropTypes.string.isRequired,
   centered: PropTypes.bool,
   big: PropTypes.bool,
+  noFade: PropTypes.bool,
   children: PropTypes.node.isRequired,
 }
 
