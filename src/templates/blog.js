@@ -18,6 +18,7 @@ export default function PageTemplate({ data: { mdx }, pageContext }) {
         title={mdx.frontmatter.title}
         description={mdx.frontmatter.description}
         keywords={[]}
+        canonicalLink={mdx.frontmatter.canonicalLink}
       />
       <section className="center blog">
         <article className="container small">
@@ -100,6 +101,7 @@ export const pageQuery = graphql`
         description
         categories
         date(formatString: "MMMM DD, YYYY")
+        canonicalLink
       }
       code {
         body
