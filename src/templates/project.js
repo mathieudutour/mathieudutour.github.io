@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import MDXRenderer from "gatsby-mdx/mdx-renderer"
+import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer"
 
 import SEO from "../components/seo"
 
@@ -18,7 +18,7 @@ export default function ProjectTemplate({ data: { mdx } }) {
             <h1>{mdx.frontmatter.title}</h1>
           </header>
 
-          <MDXRenderer>{mdx.code.body}</MDXRenderer>
+          <MDXRenderer>{mdx.body}</MDXRenderer>
         </article>
       </section>
     </div>
@@ -37,9 +37,7 @@ export const pageQuery = graphql`
         url
         color
       }
-      code {
-        body
-      }
+      body
     }
   }
 `

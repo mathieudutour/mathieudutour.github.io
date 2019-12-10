@@ -1,3 +1,10 @@
+.blog h1 a {
+  text-decoration: none;
+  font-size: 48px;
+  color: #666666;
+  margin-left: -40px;
+}
+
 .blog h3 {
   margin-top: 2.5em;
 }
@@ -19,4 +26,48 @@
 .blog footer small {
   font-size: 0.8em;
   opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+}
+
+.blog footer small a {
+  font-size: 17px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
+
+.anchor {
+  position: absolute;
+  left: -30px;
+  opacity: 0;
+  width: 30px;
+  fill: white;
+}
+
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+  opacity: 1;
+}
+
+h1 .anchor {
+  margin-top: 21px;
+}
+h3 .anchor {
+  margin-top: 5px;
+}
+h4 .anchor {
+  margin-top: 2px;
 }

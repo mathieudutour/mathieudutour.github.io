@@ -140,29 +140,36 @@ img {
   }
 }
 
+pre,
 code {
-  background-color: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  font-size: 16px;
+  background: rgb(12, 12, 12);
+  font-family: "SFMono-Regular", Menlo, Monaco, "Courier New", Courier,
+    monospace;
 }
+
+code {
+  padding: 3px 4px;
+  margin: 0 2px;
+}
+
+pre {
+  overflow: scroll;
+  padding: 20px;
+  white-space: pre-wrap;
+}
+
 pre code {
-  background: none;
-  line-height: 1.42;
+  padding: 0;
+  margin: 0;
 }
-code:before,
-code:after,
-tt:before,
-tt:after {
-  letter-spacing: -0.2em;
-  content: " ";
-}
-pre code:before,
-pre code:after,
-pre tt:before,
-pre tt:after {
-  content: "";
+
+figcaption {
+  width: 100%;
+  margin-top: 10px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.68);
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 14px;
 }

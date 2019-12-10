@@ -7,7 +7,7 @@ import BlogListing from "../components/blog-listing"
 
 const BlogIndexPage = ({ data: { allMdx } }) => (
   <Layout>
-    <SEO title="Mathieu Dutour - Blog" keywords={[]} />
+    <SEO title="Mathieu Dutour - Blog" />
     <BlogListing posts={allMdx.nodes} />
   </Layout>
 )

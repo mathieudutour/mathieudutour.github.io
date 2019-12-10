@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Section from "./section"
 import Pills from "./pills"
@@ -15,7 +16,7 @@ const BlogListing = ({ posts, nested }) => (
         centered
         big={nested}
       >
-        <a href={post.fields.slug} className="blog-listing">
+        <Link to={post.fields.slug} className="blog-listing">
           <h1>{post.frontmatter.title}</h1>
           <p>
             {formatPostDate(post.frontmatter.date)}
@@ -23,7 +24,7 @@ const BlogListing = ({ posts, nested }) => (
           </p>
           <Pills items={post.frontmatter.categories} />
           <p>{post.frontmatter.description}</p>
-        </a>
+        </Link>
       </Section>
     ))}
   </>

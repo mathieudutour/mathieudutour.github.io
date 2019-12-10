@@ -36,7 +36,7 @@ function SEO({ description, lang, meta, keywords, title, canonicalLink }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={title || site.siteMetadata.title}
       meta={[
         {
           name: `description`,
@@ -44,7 +44,7 @@ function SEO({ description, lang, meta, keywords, title, canonicalLink }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: title || site.siteMetadata.title,
         },
         {
           property: `og:description`,
@@ -68,7 +68,7 @@ function SEO({ description, lang, meta, keywords, title, canonicalLink }) {
         },
       ]
         .concat(
-          keywords.length > 0
+          (keywords || []).length > 0
             ? {
                 name: `keywords`,
                 content: keywords.join(`, `),

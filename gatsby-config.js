@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-mdx`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
         gatsbyRemarkPlugins: [
           {
@@ -19,6 +19,7 @@ module.exports = {
             options: {
               maxWidth: 700,
               backgroundColor: "transparent",
+              showCaptions: true,
             },
           },
           `gatsby-remark-copy-linked-files`,
@@ -32,6 +33,16 @@ module.exports = {
           "gatsby-remark-autolink-headers",
           "gatsby-remark-smartypants",
           "gatsby-remark-external-links",
+        ],
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 700,
+              backgroundColor: "transparent",
+              showCaptions: true,
+            },
+          },
         ],
       },
     },
