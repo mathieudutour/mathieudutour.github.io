@@ -2,7 +2,7 @@ const config = {
   title: `Mathieu Dutour`,
   description: `I build things.`,
   author: `Mathieu Dutour`,
-  siteUrl: `https://mathieu.dutour.me`,
+  siteUrl: `https://mathieu.dutour.me/`,
   githubUrl: `https://github.com/mathieudutour/mathieudutour.github.io`,
   bio: "",
   shortBio: "",
@@ -25,6 +25,7 @@ module.exports = {
         pathPrefix: "blog",
         config,
         contentPath: "blog",
+        webmentionsToken: process.env.WEBMENTIONS_TOKEN,
       },
     },
     {
