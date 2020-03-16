@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react"
-import PropTypes from "prop-types"
 
 import getWebGLContext from "../utils/webgl"
 import compileShaders from "../utils/shaders"
@@ -533,10 +532,6 @@ const SmokeTitle = ({ children }) => {
       </div>
     </section>
   )
-}
-
-SmokeTitle.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default SmokeTitle

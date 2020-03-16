@@ -1,7 +1,7 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "gatsby-theme-medium-to-own-blog/src/components/seo"
+import Layout from "gatsby-theme-medium-to-own-blog/src/components/layout"
 import Section from "../components/section"
 
 const IndexPage = () => (

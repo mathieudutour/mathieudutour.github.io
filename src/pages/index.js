@@ -1,12 +1,14 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "gatsby-theme-medium-to-own-blog/src/components/seo"
+import Layout from "gatsby-theme-medium-to-own-blog/src/components/layout"
 import Section from "../components/section"
 import Projects from "../components/projects"
 import SmokeTitle from "../components/smoke-title"
 import BlogListing from "../components/blog-listing"
+
+import "./index.css"
 
 const IndexPage = ({ data: { allMdx } }) => (
   <Layout>

@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Pills from "gatsby-theme-medium-to-own-blog/src/components/pills"
 import Section from "./section"
-import Pills from "./pills"
 import { formatPostDate, formatReadingTime } from "../utils/dates"
 
 import "./blog-listing.css"

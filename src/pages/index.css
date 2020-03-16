@@ -1,0 +1,49 @@
+#hero {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.subhead {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 7rem;
+}
+
+.head {
+  font-weight: 500;
+  font-size: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .head {
+    font-size: 6.5rem;
+  }
+
+  .subhead {
+    font-size: 4.5rem;
+  }
+
+  #about .container.small p,
+  .project,
+  #social .container.small p {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .head {
+    font-size: 5rem;
+  }
+
+  .subhead {
+    font-size: 3rem;
+  }
+
+  #about .container.small p,
+  .project,
+  #social .container.small p {
+    font-size: 30px;
+  }
+}
