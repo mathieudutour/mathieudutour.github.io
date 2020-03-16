@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-theme-medium-to-own-blog`,
       options: {
-        pathPrefix: "blog",
+        pathPrefix: "/blog",
         config,
         contentPath: "blog",
         webmentionsToken: process.env.WEBMENTIONS_TOKEN,
