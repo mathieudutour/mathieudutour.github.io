@@ -14,6 +14,7 @@ const config = {
     linkedin: "",
     medium: "@mathieudutour",
   },
+  goatCounterCode: "mathieu_dutour_me",
 }
 
 module.exports = {
