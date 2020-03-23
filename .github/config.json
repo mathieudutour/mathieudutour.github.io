@@ -1,0 +1,19 @@
+{
+  "user": {
+    "name": "Mathieu Dutour",
+    "email": "mathieu@dutour.me",
+    "blog": "https://mathieu.dutour.me",
+    "company": "@Lona",
+    "location": "¯\\_(ツ)_/¯",
+    "hireable": true,
+    "bio": "Build things. Nomad.\n\nhttps://twitter.com/MathieuDutour"
+  },
+  "pinned": [
+    "https://github.com/airbnb/react-sketchapp",
+    "https://github.com/mathieudutour/medium-to-own-blog",
+    "https://github.com/airbnb/Lona",
+    "https://github.com/skpm/skpm",
+    "https://github.com/kactus-io/kactus",
+    "https://github.com/mathieudutour/git-sketch-plugin"
+  ]
+}
