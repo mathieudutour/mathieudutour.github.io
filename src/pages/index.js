@@ -5,7 +5,7 @@ import SEO from "gatsby-theme-medium-to-own-blog/src/components/seo"
 import Layout from "gatsby-theme-medium-to-own-blog/src/components/layout"
 import Section from "../components/section"
 import Projects from "../components/projects"
-import SmokeTitle from "../components/smoke-title"
+// import SmokeTitle from "../components/smoke-title"
 import BlogListing from "../components/blog-listing"
 
 import "./index.css"
@@ -13,10 +13,10 @@ import "./index.css"
 const IndexPage = ({ data: { allMdx } }) => (
   <Layout>
     <SEO title="Mathieu Dutour" keywords={[]} />
-    <SmokeTitle>
+    <Section centered fullPage>
       <h1 className="head fadeIn">Mathieu Dutour</h1>
       <h3 className="subhead fadeIn">I build things.</h3>
-    </SmokeTitle>
+    </Section>
 
     <Section name="about" centered>
       <p>

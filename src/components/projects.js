@@ -32,15 +32,10 @@ const Projects = () => {
       {projects.map(project => (
         <div className="project" key={project.url}>
           <p>
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-title"
-            >
-              {project.title}
-            </a>{" "}
-            {project.description}.
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <span className="project-title">{project.title}</span>{" "}
+              {project.description}.
+            </a>
           </p>
         </div>
       ))}

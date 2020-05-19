@@ -22,19 +22,25 @@ const observer =
         unobserve() {},
       }
 
-const Section = ({ name, centered, children, big, noFade }) => {
+const Section = ({ name, centered, children, big, noFade, fullPage }) => {
   const sectionRef = useRef(null)
-  if (!noFade) {
-    useEffect(() => {
-      const elem = sectionRef.current
-      observer.observe(elem)
 
-      return () => observer.unobserve(elem)
-    }, [sectionRef])
-  }
+  useEffect(() => {
+    if (noFade) {
+      return
+    }
+    const elem = sectionRef.current
+    observer.observe(elem)
+
+    return () => observer.unobserve(elem)
+  }, [sectionRef, noFade])
 
   return (
-    <section id={name} className={centered ? "center" : ""} ref={sectionRef}>
+    <section
+      id={name}
+      className={centered ? `center${fullPage ? " full-page" : ""}` : ""}
+      ref={sectionRef}
+    >
       <div className={`${big ? "" : "container small"}`}>{children}</div>
     </section>
   )

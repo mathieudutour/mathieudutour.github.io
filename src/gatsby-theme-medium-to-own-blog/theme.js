@@ -13,6 +13,10 @@ export default {
     boxShadow: "rgba(255, 255, 255, 0.04)",
     separator: "rgba(255, 255, 255, 0.09)",
     categories: {
+      SVG: {
+        background: "#99ffa0",
+        text: "#12702e",
+      },
       "Design Version Control": {
         background: "#fde876",
         text: "#735f00",
