@@ -38,13 +38,15 @@ const IndexPage = ({ data: { allMdx } }) => (
     </Section>
 
     <Section name="blog-posts" noFade>
-      <h1 className="head">Writings</h1>
+      <h1 className="head" id="blog">
+        Writings
+      </h1>
       <BlogListing posts={allMdx.nodes} nested />
     </Section>
 
     <Section name="social">
       <p>
-        Find my writing on my <Link to="/blog">Blog</Link>, my thoughts on{" "}
+        Find my writing on my <Link to="#blog">Blog</Link>, my thoughts on{" "}
         <a
           href="https://twitter.com/mathieudutour"
           target="_blank"
