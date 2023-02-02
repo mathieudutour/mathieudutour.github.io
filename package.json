@@ -5,8 +5,8 @@
   "version": "0.1.0",
   "author": "Mathieu Dutour <mathieu@dutour.me>",
   "dependencies": {
-    "gatsby": "^2.19.44",
-    "gatsby-source-filesystem": "^2.1.56",
+    "gatsby": "^5.5.0",
+    "gatsby-source-filesystem": "^2.11.1",
     "gatsby-theme-medium-to-own-blog": "^0.2.15",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
